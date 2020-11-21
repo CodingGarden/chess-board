@@ -1,0 +1,18 @@
+.board {
+  border: 10px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.square {
+  font-size: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square.black {
+  background: black;
+  color: white;
+}
