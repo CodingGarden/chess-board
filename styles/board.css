@@ -3,6 +3,8 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  -webkit-transform: scale3d(1, 1, 2) rotate3d(1, 0, 0, 60deg); /* Chrome, Safari, Opera */
+  transform: scale3d(1, 1, 2) rotate3d(1, 0, 0, 60deg); /* Standard syntax */
 }
 
 .square {
