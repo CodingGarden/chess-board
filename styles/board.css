@@ -1,5 +1,6 @@
 .board {
-  border: 10px solid black;
+  border: 5px solid black;
+  background: white;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -10,9 +11,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .square.black {
-  background: black;
+  background: #56BC58;
   color: white;
+}
+
+.square img {
+  width: 85%;
+  z-index: 999;
+}
+
+.square .file-label {
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.25rem;
+  color: #444;
+  font-size: 2vmin;
+}
+
+.square .rank-label {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.1rem;
+  color: #444;
+  font-size: 2vmin;
 }
